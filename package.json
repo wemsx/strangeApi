@@ -1,0 +1,15 @@
+{
+  "name": "strangeApi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./index.js"
+  },
+  "author": "wemsx",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "qr-image": "^3.2.0"
+  }
+}
