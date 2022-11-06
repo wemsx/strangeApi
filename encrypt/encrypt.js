@@ -154,7 +154,11 @@ exports.getBase64 = function(str){
 };
 
 //Hmac算法
-exports.getHMAC = function(str , secret){
+exports.getHMAC_md5 = function(str , secret){
+    var hash = crypto.createHmac('md5', secret).update(str).digest('hex');
+    return hash;
+};
+exports.getHMAC_sha = function(str , secret){
     var hash = crypto.createHmac('sha256', secret).update(str).digest('hex');
     return hash;
 };
